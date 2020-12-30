@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 .App {
-  background-color: #1E1E1E; }
+  background-color: #1E1E1E;
+  color: white;
+  font-size: 48px;
+  text-align: center; }
   .App ul {
     display: flex;
     flex-direction: row;
@@ -40,4 +43,4 @@
         color: white;
         transition: opacity 0.45s ease-in-out; }
 
-/*# sourceMappingURL=App.css.map */
+/*# sourceMappingURL=app.css.map */
