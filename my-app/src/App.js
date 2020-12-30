@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Modal from './Modal'
-import './App.css';
+import './app.css';
 import axios from 'axios';
 
  
@@ -34,8 +34,8 @@ function App() {
     <ul>
       {data.map(item => (
         <li key={item.id}>
-          <img src={item.download_url} alt="" title={item.author} onClick={() => setModal(item.download_url)}/>
-          <div className="details">
+          <img src={item.download_url} alt="" title={item.author} />
+          <div className="details" onClick={() => setModal(item.download_url)}>
             <p>{item.author}</p>
           </div>
         </li>

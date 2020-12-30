@@ -1,30 +1,43 @@
-.App ul {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around; }
-  .App ul li {
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+.App {
+  background-color: #1E1E1E; }
+  .App ul {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    height: 300px;
-    padding: 10px;
-    margin-bottom: 20px;
-    background-color: whitesmoke;
-    border: 1px solid lightgray; }
-    .App ul li:hover {
-      background-color: #f2f9fb; }
-    .App ul li:hover > .details {
-      opacity: 1; }
-    .App ul li img {
-      width: 300px;
-      max-height: 200px;
-      object-fit: cover;
-      cursor: pointer; }
-    .App ul li .details {
-      opacity: 0;
-      transition: opacity 0.25s ease-in-out; }
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 100px; }
+    .App ul li {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 350px;
+      height: 350px;
+      position: relative;
+      background-color: whitesmoke;
+      margin: 40px 0; }
+      .App ul li:hover > .details {
+        opacity: .75; }
+      .App ul li img {
+        width: 350px;
+        height: 350px;
+        object-fit: cover;
+        cursor: pointer; }
+      .App ul li .details {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-family: 'Playfair Display', serif;
+        font-size: 24px;
+        width: 350px;
+        height: 350px;
+        opacity: 0;
+        background-color: #2295F3;
+        color: white;
+        transition: opacity 0.45s ease-in-out; }
 
 /*# sourceMappingURL=App.css.map */

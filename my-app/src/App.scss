@@ -1,35 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
 .App {
+    background-color: #1E1E1E;
   ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin: 0 100px;
     li {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      width: 300px;
-      height: 300px;
-      padding: 10px;
-      margin-bottom: 20px;
+      width: 350px;
+      height: 350px;
+      position: relative;
       background-color: whitesmoke;
-      border: 1px solid lightgray;
-      &:hover {
-        background-color: #f2f9fb;
-      }
+      margin: 40px 0;
       &:hover > .details {
-        opacity: 1;
+        opacity: .75;
       }
       img {
-        width: 300px;
-        max-height: 200px;
+        width: 350px;
+        height: 350px;
         object-fit: cover;
         cursor: pointer;
       }
       .details {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-family: 'Playfair Display', serif;
+        font-size: 24px;
+        width: 350px;
+        height: 350px;
         opacity: 0;
-        transition: opacity 0.25s ease-in-out;
+        background-color: #2295F3;
+        color: white;
+        transition: opacity 0.45s ease-in-out;
       }
     }
   }
