@@ -1,0 +1,30 @@
+.App ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  .App ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: whitesmoke;
+    border: 1px solid lightgray; }
+    .App ul li:hover {
+      background-color: #F2F9FB; }
+    .App ul li:hover > .details {
+      opacity: 1; }
+    .App ul li img {
+      width: 300px;
+      max-height: 200px;
+      object-fit: cover;
+      cursor: pointer; }
+    .App ul li .details {
+      opacity: 0;
+      transition: opacity .25s ease-in-out; }
+
+/*# sourceMappingURL=App.css.map */

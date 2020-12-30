@@ -1,0 +1,36 @@
+.App {
+    ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        li {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            height: 300px;
+            padding: 10px;
+            margin-bottom: 20px;
+            background-color: whitesmoke;
+            border: 1px solid lightgray;
+            &:hover {
+                background-color:#F2F9FB;
+            }
+            &:hover > .details {
+                opacity: 1;
+            }
+            img {
+                width: 300px;
+                max-height: 200px;
+                object-fit: cover;
+                cursor: pointer;
+            }
+            .details {
+                opacity: 0;
+                transition: opacity .25s ease-in-out;
+            }
+        }
+    }
+}
