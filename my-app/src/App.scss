@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 
 .App {
-    background-color: #1E1E1E;
-    color: white;
-    font-size: 48px;
-    text-align: center;
+  background-color: #1e1e1e;
+  color: white;
+  font-size: 48px;
+  text-align: center;
   ul {
     display: flex;
     flex-direction: row;
@@ -23,7 +22,7 @@
       background-color: whitesmoke;
       margin: 40px 0;
       &:hover > .details {
-        opacity: .75;
+        opacity: 0.85;
       }
       img {
         width: 350px;
@@ -38,12 +37,13 @@
         position: absolute;
         top: 0;
         left: 0;
-        font-family: 'Playfair Display', serif;
+        font-family: "Playfair Display", serif;
         font-size: 24px;
         width: 350px;
         height: 350px;
         opacity: 0;
-        background-color: #2295F3;
+        background: rgb(34,149,243);
+        background: linear-gradient(145deg, rgba(34,149,243,1) 0%, rgba(34,175,160,1) 100%);
         color: white;
         transition: opacity 0.45s ease-in-out;
       }
