@@ -51,6 +51,11 @@
     display: inline-block;
     text-align: center;
   }
+
+  .modal .modal-body > img {
+    width: 600px;
+    object-fit: cover;
+  }
   
   .modal > .modal-close:hover {
     background: rgba(255, 255, 255, 0.989);

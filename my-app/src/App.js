@@ -7,6 +7,7 @@ import axios from 'axios';
 function App() {
   const modal = useRef(null)
   const [data, setData] = useState([]);
+  const [selectedImg, setSelectedImg] = useState()
 
   useEffect(() => {
     const fetchData = async () => {
@@ -19,6 +20,13 @@ function App() {
  
     fetchData();
   }, []);
+
+  const setModal = (imgUrl) => {
+    data.map(item => (
+      setSelectedImg(imgUrl)
+    ))
+    modal.current.open()
+  }
  
   return (
     <>
@@ -26,7 +34,7 @@ function App() {
     <ul>
       {data.map(item => (
         <li key={item.id}>
-          <img src={item.download_url} alt="" title={item.author} onClick={() => modal.current.open()}/>
+          <img src={item.download_url} alt="" title={item.author} onClick={() => setModal(item.download_url)}/>
           <div className="details">
             <p>{item.author}</p>
           </div>
@@ -35,7 +43,7 @@ function App() {
     </ul>
     </div>
     <Modal ref={modal}>
-        Hello World!
+      <img src={selectedImg} alt=""/>
       </Modal>
     </>
   )

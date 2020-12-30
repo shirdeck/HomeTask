@@ -15,7 +15,7 @@
     background-color: whitesmoke;
     border: 1px solid lightgray; }
     .App ul li:hover {
-      background-color: #F2F9FB; }
+      background-color: #f2f9fb; }
     .App ul li:hover > .details {
       opacity: 1; }
     .App ul li img {
@@ -25,6 +25,6 @@
       cursor: pointer; }
     .App ul li .details {
       opacity: 0;
-      transition: opacity .25s ease-in-out; }
+      transition: opacity 0.25s ease-in-out; }
 
 /*# sourceMappingURL=App.css.map */
